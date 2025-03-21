@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Card</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/about.css')}}">
+  </head>
+  <body>
+    <h2>Student Report Card Form</h2>
+    {%if message%}
+    <p>{{message}}</p>
+    {%endif%} {%if student%}
+    <h3>{{student[0]}}</h3>
+    <h4>{{student[1]}}</h4>
+    <h5>{{student[2]}}</h5>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>{{student[3]}}</td>
+          <td>{{student[4]}}</td>
+        </tr>
+        <tr>
+          <td>{{student[5]}}</td>
+          <td>{{student[6]}}</td>
+        </tr>
+        <tr>
+          <td>{{student[7]}}</td>
+          <td>{{student[8]}}</td>
+        </tr>
+        <tr>
+          <td>{{student[9]}}</td>
+          <td>{{student[10]}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>
+      Total marks: {%set total_marks=student[4]+
+      student[6]+student[8]+student[10] %} {{total_marks}}
+    </h4>
+    {%else%}
+    <p>No report card available.</p>
+    {%endif%}
+    <h3>Enter Enrollment to view report card</h3>
+<form action="" method="POST">
+    <label for="enrollment">Enrollment Number:</label>
+    <input type="number" id="enrollment" name="enrollment" required/><br><br>
+<button type="submit" id="btn">Generate Report Card</button>
+<button onclick="window.location.href='/';" id="btn">Go to Home</button>
+
+</form>
+</body>
+</html>

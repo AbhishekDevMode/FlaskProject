@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>XYZ College</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <!-- Link to external CSS -->
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to ABC College</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main_section">
+      <h1>Add Students Data</h1>
+      <button id="btn" onclick="window.location.href='/students_report';">
+        Click Here
+      </button>
+      <h1>Subjects Information</h1>
+      <button id="btn" onclick="window.location.href='/subject';">
+        Click Here
+      </button>
+      
+      <h1>Generate Reportcard</h1>
+      <button id="btn" onclick="window.location.href='/reportcard';">
+        Click Here
+      </button>
+      <h1>Update Marks</h1>
+      <button id="btn" onclick="window.location.href='/update_marks';">
+        Click Here
+      </button>
+    </section>
+
+    <div id="admin">Admissions Open</div>
+    <main class="main">
+      <section id="home" class="card">
+        <h2>Welcome to XYZ College</h2>
+        <p>
+          At XYZ College, we provide top-notch education with a commitment to
+          holistic development. Our mission is to empower students to achieve
+          their full potential and become leaders in their fields.
+        </p>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About Us</h2>
+        <p>
+          XYZ College was established in 1995 with the aim of offering quality
+          education in diverse fields. Our college is known for its academic
+          excellence, modern infrastructure, and vibrant campus life.
+        </p>
+        <p>
+          We offer a wide range of undergraduate and postgraduate programs
+          designed to meet the needs of a rapidly changing world.
+        </p>
+      </section>
+
+      <section id="courses" class="card">
+        <h2>Our Courses</h2>
+        <p>We offer various courses in the following departments:</p>
+        <ul>
+          <li>Computer Science and Engineering</li>
+          <li>Business Administration</li>
+          <li>Electrical Engineering</li>
+          <li>Medical Sciences</li>
+          <li>Arts and Humanities</li>
+          <li>Social Sciences</li>
+        </ul>
+        <p>
+          For detailed information about courses, visit our
+          <a href="#admissions">admissions section</a>.
+        </p>
+      </section>
+
+      <section id="admissions" class="card">
+        <h2>Admissions</h2>
+        <p>
+          Our college admits students through a competitive entrance
+          examination. Please follow the instructions on our
+          <a href="#contact">contact page</a> to get in touch with our
+          admissions office.
+        </p>
+        <p>
+          For application deadlines and requirements, check the
+          <a href="https://www.xyzcollege.edu/admissions">admissions page</a>.
+        </p>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out:</p>
+        <ul>
+          <li>Email: info@xyzcollege.edu</li>
+          <li>Phone: +1 (555) 123-4567</li>
+          <li>Address: 123 College St, City, Country</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;2025 XYZ College. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

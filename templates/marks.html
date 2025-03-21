@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Form</title>
+   <link rel="stylesheet" href="{{url_for('static',filename='css/marks.css')}}">
+   <link rel="stylesheet" href="{{url_for('static',filename='css/marks/css')}}">
+  </head>
+  <body>
+    <form action="/update_marks" method="POST">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="enrollment">Enrollment:</label>
+      <input
+        type="number"
+        placeholder="enter enrollment"
+        name="enrollment"
+        required
+      />
+
+      <label for="dateOfBirth">DOB:</label>
+      <input
+        type="date" id="dateOfBirth"
+        name="dateOfBirth"
+        placeholder="Select the date of birth"
+      />
+
+      <label for="subject1">Subject Name:</label>
+      <input type="text" id="subject1" name="subject1" required />
+
+      <label for="marks1">Marks</label>
+      <input type="number" name="marks1" id="marks1" required />
+
+      <label for="subject2">Subject Name:</label>
+      <input type="text" name="subject2" id="subject2" required />
+
+      <label for="marks2">Marks:</label>
+      <input type="number" id="marks2" name="marks2" required />
+
+      <label for="subject3">Subject Name:</label>
+      <input type="text" id="subject3" name="subject3" required />
+
+      <label for="marks3">Marks:</label>
+      <input type="number" id="marks3" name="marks3" required />
+
+      <label for="subject4">Subject Name:</label>
+      <input type="text" id="subject4" name="subject4" required/>
+
+      <label for="marks4">Marks:</label>
+      <input type="number" id="marks4" name="marks4" required/>
+
+      <button type="submit" id="btn">Update</button>
+      <button onclick="window.location.href='/';" id="btn">Go to Home</button>
+
+    </form>
+  </body>
+</html>

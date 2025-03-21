@@ -1,0 +1,53 @@
+#btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid skyblue; /* Create space for the border */
+    background: linear-gradient(skyblue, rgb(97, 46, 46));
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto;
+  }
+  #btn:hover {
+    transition: ease-in-out;
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    /* font-size: 15px; */
+    box-shadow:-3px 3px 3px 3px;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url('/static/images/college.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  form{
+    position:relative;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius:10px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg,white,rgb(134, 114, 114));
+   
+    label{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    input{
+        height: 20px;
+        width: 100%;
+    }
+  }
